@@ -1,0 +1,1748 @@
+h1,.text1,.text2,span,h2,h5{
+    font-family: 'Poppins', sans-serif;
+}
+p,.slide-text{
+    font-family: 'Josefin Sans', sans-serif;
+}
+a{
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.center {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header1 {
+    width:calc(100% - 40px) ;
+
+    padding: 20px;
+
+}
+
+.left {
+    float: left;
+}
+
+.left h5 {
+    float: left;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.right a {
+    text-decoration: none;
+
+
+    color: #000;
+
+}
+
+.header1 .icon {
+    float: left;
+    width: 50%;
+    margin-left: 15%;
+}
+
+.header1 .icon ul li {
+    float: left;
+    margin-left: 10%;
+}
+
+.header1 .icon ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.header{
+  height: 100px;
+  background: #000;
+  padding: 0 20px;
+  color: #fff;
+   
+}
+.logo{
+  line-height: 110px;
+  float: left;
+  text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.menu{
+  float: right;
+ padding-top:30px;
+   line-height: 40px;
+    
+}
+.menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+    float: left;
+    position: relative;
+   display:block;
+     
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  
+     
+}
+.show-menu-btn{
+  float: right;
+      
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+    
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+.menu a::before{
+
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .5s ease-in 0s;
+
+}
+
+.menu  a:hover::before{
+    transform: scale(1);
+
+}
+
+.menu a::after{
+
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transform: scale(0);
+    transform-origin: right;
+    transition: all .5s ease-in 0s;
+
+}
+
+.menu a:hover::after{
+    transform: scale(1);
+
+}
+
+
+
+
+
+
+.bg-img {
+    background: url(../img/bg1.jpg) no-repeat top left;
+    height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.content {
+    text-align: center;
+    padding: 10% 0 0 0;    
+    width: 100%;
+    color: #fff;
+}
+
+.content a {
+    text-decoration: none;
+    padding: 20px 20px;
+    background: #000;
+    color: #fff;
+    font-size: 1.2em;
+
+}
+
+.content span {
+
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+  }
+
+.text2 {
+    font-size: 30px;
+    margin-bottom: 4%;
+    
+}
+
+
+body {
+  
+  overflow-x: hidden;
+  
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+.slider{
+    background: #000;
+   
+}
+.flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.slider-wrapper div { position: relative; }
+
+.slider-wrapper {
+  
+  margin-left: 11vw;
+}
+
+.slide-image { height: 24vw; }
+
+.slide-image img {
+  width: 24vw;
+  cursor: pointer;
+}
+
+.slide-content {
+  width: 25vw;
+  color: #fff;
+  padding: 3vw 18vw 3vw 9vw;
+}
+
+.slide-date {
+  color: #0a8acb;
+  font-size: 2vw;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  padding-bottom: 1.4vw;
+}
+.slide-title img{
+    width: 30px;
+}
+.slide-title {
+  font-size: 1.2vw;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  line-height: 1.55vw;
+  padding-bottom: 1.8vw;
+}
+
+.slide-text {
+  font-size: 0.80vw;
+  line-height: 1.2vw;
+  opacity: 0.8;
+  padding-bottom: 4vw;
+}
+
+.slide-more {
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  float: left;
+  font-size: 0.9vw;
+}
+.slide-more a{
+    text-decoration: none;
+    color: #fff;
+}
+.slide-bullet {
+  width: 0.5vw;
+  height: 0.5vw;
+  background-color: #0b8bcc;
+  border-radius: 200%;
+  position: relative;
+  margin-left: 1.2vw;
+}
+
+.slide-nav {
+  margin-left: 64vw;
+  margin-top: -5.5vw;
+}
+
+div.overlay-blue {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.5s ease all;
+}
+
+div.overlay-blue:hover { background-color: rgba(13, 27, 43, 0.5); }
+
+.arrows {
+  width: 3.5vw;
+  margin-top: -5.8vw;
+  margin-left: 72vw;
+  position: relative;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 0.15vw solid #fff;
+  border-left: 0.15vw solid #fff;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+
+.arrow:hover {
+  border-color: #0A8ACB;
+  border-width: 0.25vw;
+}
+
+.arrow:before {
+  display: block;
+  height: 200%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -50%;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.arrow.prev {
+  transform: rotate(-45deg);
+  left: 0;
+}
+
+.arrow.next {
+  transform: rotate(135deg);
+  right: 0;
+}
+
+.stats{
+    padding: 10% 0;
+    text-align: center;
+    
+   
+}
+.stats h1{
+     font-size: 3em;
+    z-index: -1;
+    position: relative;
+   
+}
+
+.stats h1::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    display: block;
+    width: 10%;
+    height: 5px;
+    background: black;
+    margin: 3% 0 0 40%;
+
+}
+
+.stats h1::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    display: block;
+    width: 10%;
+    height: 5px;
+    background: orange;
+    margin: 3% 41% 0 0;
+   
+}
+.cwc{
+    padding: 15% 0 10% 0;
+    text-align: center;
+     
+}
+
+.cwc h1{
+    font-size: 3em;
+    z-index: -1;
+    position: relative; 
+}
+
+.cwc h1::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    display: block;
+    width: 10%;
+    height: 5px;
+    background: black;
+    margin: 3% 0 0 40%;
+
+}
+
+.cwc h1::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    display: block;
+    width: 10%;
+    height: 5px;
+    background: orange;
+    margin: 3% 41% 0 0;
+   
+}
+
+
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.testimonial-section h1{
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+}
+
+
+
+.testimonial{
+  background: #f1f1f1;
+  padding: 40px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+    height: 200px;
+}
+
+.test-info{
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.test-pic{
+  width: 100px !important;
+  border-radius: 60%;
+  margin-right: 15px;
+}
+
+.test-name{
+  font-size: 12px;
+  color: #333;
+}
+
+.test-name span{
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3498db;
+}
+
+.testimonial p{
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.testimonial .icon ul li{
+    float: left;
+    margin-top: 10px;
+}
+.testimonial .icon ul li a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: #3498db;
+}
+.testimonial .icon ul li a:hover{
+    color: darkgray;
+}
+
+.venues{
+    padding: 15% 0 10% 0;
+    text-align: center;
+      z-index: -1;
+}
+
+.venues h1{
+    font-size: 3em;
+   
+    position: relative; 
+}
+
+.venues h1::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    display: block;
+    width: 10%;
+    height: 5px;
+    background: black;
+    margin: 6% 0 0 40%;
+
+}
+
+.venues h1::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    display: block;
+    width: 10%;
+    height: 5px;
+    background: orange;
+    margin: 6% 41% 0 0;
+   
+}
+
+.venues p{
+    margin-top: 15px;
+}
+/* swiper-slide start */
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.swiper-slide .imgbx {
+     width: 100%;
+    height: 300px;
+   overflow: hidden;
+}
+.swiper-slide .imgbx img{
+      width: 100%;
+    height: 300px;
+} 
+.swiper-slide .details{
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 20px;
+}
+.swiper-slide .details h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+.swiper-slide .details h3 span{
+    font-size: 16px;
+    color: #f44336;
+    
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 380px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.ven{
+    background: #000;
+}
+/*commercial partners start*/
+.spn{
+    padding: 15% 0 10% 0;
+    text-align: center;
+     
+}
+
+.spn h1{
+    font-size: 3em;
+    z-index: -1;
+    position: relative; 
+}
+
+.spn h1::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    display: block;
+    width: 10%;
+    height: 5px;
+    background: black;
+    margin: 3% 0 0 40%;
+
+}
+
+.spn h1::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    display: block;
+    width: 10%;
+    height: 5px;
+    background: orange;
+    margin: 3% 41% 0 0;
+   
+}
+
+.sponserd{
+    width: 100%;
+    
+}
+
+.sponserd ul li{
+    float: left;
+    width: calc(20% - 30px);
+    margin-left: 30px;
+    
+}
+.sponserd ul li a img{
+    width: 100%;
+}
+
+
+.support{
+    width: 100%;
+    
+}
+
+.support ul li{
+    float: left;
+    width: calc(16.66% - 40px);
+    margin: 30px 0 0 40px;
+}
+.support ul li a img{
+    width: 100%;
+}
+
+.powerd{
+    width: 100%;
+    
+}
+
+.powerd ul li{
+    float: left;
+    width: calc(12.5% - 50px);
+    margin: 30px 0 0 40px;
+    
+}
+.powerd ul li a img{
+    width: 100%;
+}
+/*commercial partners end*/
+
+.footer{
+    width:100%;
+    background: url(../img/footer1.jpg)fixed no-repeat top left;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    padding: 60px 0;
+    color: #D0D3D4  ;
+    margin-top: 10%;
+    position: relative;
+     
+}
+.footer h1{
+    font-size: 1.7em;
+}
+.about{
+    float: left;
+    width: calc(25% - 40px);
+    margin:20px 0 0 40px;
+    
+}
+.about h1{
+   position: relative; 
+}
+/*
+ .about h1::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 0px;
+    display: block;
+    width: 35%;
+    height: 3px;
+    background: rgba(153, 153, 153, 0.8);
+    margin: 3% 15% 0 0%;
+
+}
+*/
+.about p{
+    font-size: 0.9em;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.tournaments{
+    float: left;
+    width: calc(25% - 40px);
+    margin:20px 0 0 40px;
+    text-align:left;
+   
+}
+.tournaments h1{
+    position: relative; 
+}
+/*
+ .tournaments h1::after {
+    content: "";
+    position: absolute;
+    top: 3%;
+    left: 70%;
+    display: block;
+    width: 35%;
+    height: 3px;
+    background: rgba(153, 153, 153, 0.8);
+    margin: 3% 15% 0 0%;
+
+}
+*/
+.tournaments ul li{
+    list-style: none;
+    
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.tournaments ul li a{
+    color: #fff ;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+    padding: 5px ;
+    text-decoration: none;
+}
+.tournaments ul li a::before {
+
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: orange;
+    display: block;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .5s ease-in 0s;
+
+}
+
+.tournaments ul li a:hover::before {
+    transform: scale(1);
+
+}
+.tournaments ul li a:hover{
+     color:orange;
+}
+.video{
+    float: left;
+    width: calc(25% - 40px);
+    margin:20px 0 0 40px;
+    text-align: left;
+    
+}
+.video h1{
+    position: relative;
+}
+/*
+.video h1::after {
+    content: "";
+    position: absolute;
+    top: 3%;
+    left: 75%;
+    display: block;
+    width: 35%;
+    height: 3px;
+    background: rgba(153, 153, 153, 0.8);
+    margin:3% 15% 0 0%;
+
+}
+*/
+.video ul li{
+    list-style: none;
+    
+    line-height: 40px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.video ul li a{
+     color: #fff ;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+    padding: 5px ;
+    text-decoration: none;
+}
+.video ul li a::before {
+
+    content: "";
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: orange;
+    display: block;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .5s ease-in 0s;
+
+}
+
+.video ul li a:hover::before {
+    transform: scale(1);
+
+}
+.video ul li a:hover{
+     color:orange;
+}
+.icc{
+    float: left;
+    width: calc(25% - 40px);
+    margin:20px 0 0 40px;
+    text-align: left;
+    
+}
+.icc h1{
+   position: relative; 
+}
+/*
+.icc h1::after {
+    content: "";
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    display: block;
+    width: 35%;
+    height: 3px;
+    background: rgba(153, 153, 153, 0.8);
+    margin: 3% 15% 0 0%;
+
+}
+*/
+.icc ul li{
+    list-style: none;
+    
+    line-height: 40px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.icc  ul li a{
+     color: #fff ;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+    padding: 5px ;
+    text-decoration: none;
+}
+  .icc ul li a::before {
+
+    content: "";
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: orange;
+    display: block;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .5s ease-in 0s;
+
+}
+
+.icc ul li a:hover::before {
+    transform: scale(1);
+
+}  
+
+
+.icc ul li a:hover{
+     color:orange;
+}
+
+.middle{
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.btn1{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+.btn1 i{
+  line-height: 30px;
+  font-size: 15px;
+  transition: 0.2s linear;
+}
+.btn1:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn1::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+    
+}
+.btn1:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+.gotopbtn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background:orange ;
+    text-decoration: none;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+ 
+}
+
+
+
+/*media query start*/
+@media only screen and (max-width:1125px) {
+
+    .about{
+        display: none;
+    }
+    .tournaments {
+       
+    width: calc(33.33% - 50px);
+    margin:20px 0 0 50px;
+    text-align: left;
+    }
+    .video {
+         
+    width: calc(33.33% - 50px);
+    margin:20px 0 0 50px;
+    text-align: left;
+    }
+    .icc {
+        
+    width: calc(33.33% - 50px);
+    margin:20px 0 0 50px;
+    text-align: left;
+    }
+}
+@media only screen and (max-width:1080px) {
+
+    .header1 .icon ul li {
+
+        margin-left: 5%;
+    }
+
+    .header1 .icon {
+
+        margin-left: 10%;
+    }
+    .tournaments ul li a::before {
+
+   
+    left: 60%;
+   
+}
+
+}
+@media only screen and (max-width:1085px){
+    .border{
+        margin-top: 40px;
+    }
+    
+} 
+@media only screen and (max-width:985px){
+    .border{
+        margin-top: 60px;
+    }
+    .tournaments h1::after {
+       margin: 3% 15% 0 5%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 5%;
+
+}
+    .icc h1::after {
+       margin: 3% 15% 0 5%;
+
+}
+}
+@media only screen and (max-width:944px){
+    
+    .tournaments h1::after {
+       margin: 3% 15% 0 10%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 10%;
+
+}
+    .icc h1::after {
+       margin: 3% 15% 0 10%;
+
+}
+    .icc {
+        
+    width: calc(33.33% - 70px);
+    margin:20px 0 0 70px;
+    text-align: left;
+    }
+    .icc ul li a::before {
+
+   
+    left: 60%;
+   
+}
+}
+@media only screen and (max-width:938px) {
+    .header1 .icon {
+
+        margin-left: 5%;
+    }
+
+   @media only screen and (max-width:891px){
+    
+    .tournaments h1::after {
+       margin: 3% 15% 0 15%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 15%;
+
+}
+    .icc h1::after {
+       margin: 3% 15% 0 15%;
+
+}
+}
+    @media only screen and (max-width:860px){
+        .powerd ul li{
+    float: left;
+    width: calc(20% - 50px);
+    margin: 30px 0 0 40px;
+    
+}
+    }
+    @media only screen and (max-width:863px) {
+        .header1 .icon {
+            margin-left: 5%;
+        }
+
+        .header1 .icon ul li {
+            margin-left: 2%;
+        }
+        .text1{
+            font-size: 2.5em;
+            
+        }
+        .content{
+            padding-top: 20%;
+        }
+       .cwc h1::before {
+    
+    
+    margin: 5% 0 0 40%;
+
+}
+
+.cwc h1::after {
+   
+    margin: 5% 41% 0 0;
+   
+}
+        .venues h1::before {
+    
+    
+    margin: 8% 0 0 40%;
+
+}
+
+.venues h1::after {
+   
+    margin: 8% 41% 0 0;
+   
+}
+         .spn h1::before {
+    
+    
+    margin: 5% 0 0 40%;
+
+}
+
+.spn h1::after {
+   
+    margin: 5% 41% 0 0;
+   
+}
+    }
+    
+
+        @media only screen and (max-width:885px) {
+            .header1 .icon {
+
+                display: none;
+            }
+           
+        }
+    @media only screen and (max-width:856px){
+        .tournaments h1{
+            font-size: 1.3em;
+        }
+        .video h1{
+            font-size: 1.3em;
+        }
+        .icc h1{
+            font-size: 1.3em;
+        }
+    .tournaments h1::after {
+       margin: 3% 15% 0 30%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 20%;
+
+}
+    .icc h1::after {
+       margin: 3% 15% 0 20%;
+
+}
+        .tournaments {
+        
+    width: calc(33.33% - 80px);
+    margin:20px 0 0 80px;
+    text-align: left;
+    }
+    .video {
+        
+    width: calc(33.33% - 80px);
+    margin:20px 0 0 80px;
+    text-align: left;
+    }
+        .icc {
+        
+    width: calc(33.33% - 80px);
+    margin:20px 0 0 80px;
+    text-align: left;
+    }
+}
+@media screen and (max-width:855px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+    .menu a:hover
+{
+  color: orange;
+    
+}
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 20% 0 0 0;
+    line-height: normal;
+    transition: 0.7s;
+      z-index: 999;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+      font-weight: 600;
+      color: #000;
+      float: none;
+      
+  }
+    .menu a::before{
+
+   display: none;
+}
+
+
+
+.menu a::after{
+
+   display: none;
+
+}
+
+
+
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+      color: #000;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+    .venues h1::before {
+    
+    
+    margin: 10% 0 0 40%;
+
+}
+
+.venues h1::after {
+   
+    margin: 10% 41% 0 0;
+   
+}
+}
+    @media only screen and (max-width:797px){
+        .tournaments h1{
+            font-size: 1.1em;
+        }
+        .video h1{
+            font-size: 1.1em;
+        }
+        .icc h1{
+            font-size: 1.1em;
+        }
+    .tournaments h1::after {
+       margin: 3% 15% 0 30%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 20%;
+
+}
+    .icc h1::after {
+       margin: 3% 15% 0 20%;
+
+}
+        .icc ul li a{
+            font-size:0.9em; 
+        }
+        .video ul li a{
+            font-size:0.9em; 
+        }
+        .tournaments ul li a{
+            font-size:0.9em; 
+        }
+        .icc ul li a::before {
+
+   
+   display: none;
+   
+}
+        
+        .video ul li a::before {
+
+   
+   display: none;
+   
+}
+        
+         .tournaments ul li a::before {
+
+    display: none;
+
+}
+    }
+   
+
+    }
+@media only screen and (max-width:750px){
+    
+    .tournaments h1::after {
+       margin: 3% 15% 0 40%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 30%;
+
+}
+    .icc h1::after {
+       margin: 3% 15% 0 30%;
+
+}
+       
+      
+        
+    }
+   
+}
+    @media only screen and (max-width:745px){
+         
+        .stats h1::before {
+   
+    margin: 5% 0 0 40%;
+
+}
+
+.stats h1::after {
+   
+    margin: 5% 41% 0 0;
+   
+}
+    }
+@media only screen and (max-width:665px){
+    .icc{
+        display: none;
+    }
+       .tournaments {
+        
+    width: calc(50% - 80px);
+    margin:20px 0 0 80px;
+    text-align: left;
+    }
+    .video {
+        
+    width: calc(50% - 80px);
+    margin:20px 0 0 80px;
+    text-align: left;
+    }
+     .tournaments h1::after {
+       margin: 3% 15% 0 10%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 0%;
+
+}
+        
+      
+      
+    
+    .border{
+        margin-top:80px;
+    }
+    
+    }
+    
+
+   
+        @media only screen and (max-width:600px) {
+            .text1 {
+                font-size: 30px;
+            }
+
+            .text2 {
+                font-size: 25px;
+                margin-bottom: 5%;
+            }
+            .content {
+                padding-top: 25%;
+            }
+            .content a {
+
+                padding: 15px 15px;
+                font-size: 1em;
+
+            }
+
+            .bg-img {
+                height: 70vh;
+            }
+            .stats h1{
+                font-size:2em; 
+            }
+            .spn h1{
+                font-size:2em; 
+            }
+            .venues h1{
+                font-size:2em; 
+            }
+            .cwc h1{
+                font-size:2em; 
+            }
+            
+        }
+@media only screen and (max-width:580px){
+        .tournaments {
+        
+    width: calc(50% - 40px);
+    margin:20px 0 0 40px;
+    text-align: left;
+    }
+    .video {
+        
+    width: calc(50% - 40px);
+    margin:20px 0 0 40px;
+    text-align: left;
+    }
+     .tournaments h1::after {
+       margin: 3% 15% 0 0%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 0%;
+
+}
+    .powerd ul li{
+    float: left;
+    width: calc(25% - 50px);
+    margin: 30px 0 0 40px;
+    
+}
+    .sponserd ul li{
+    float: left;
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    
+}
+    .support ul li{
+    float: left;
+    width: calc(33.33% - 40px);
+    margin: 30px 0 0 40px;
+}
+    #five{
+        display: none;
+    }       
+}
+@media only screen and (max-width:501px){
+    .tournaments {
+        
+    width: calc(50% - 20px);
+    margin:20px 0 0 20px;
+    text-align: left;
+    }
+    .video {
+        
+    width: calc(50% - 20px);
+    margin:20px 0 0 20px;
+    text-align: left;
+    }
+}
+       
+        @media only screen and (max-width:457px) {
+            .text1 {
+                font-size: 25px;
+            }
+
+            .text2 {
+                font-size: 20px;
+                margin-bottom: 6%;
+            }
+             .tournaments {
+        
+    width: calc(50% - 10px);
+    margin:20px 0 0 10px;
+    text-align: left;
+    }
+    .video {
+        
+    width: calc(50% - 10px);
+    margin:20px 0 0 10px;
+    text-align: left;
+    }
+        }
+ @media only screen and (max-width:465px) {
+          .venues h1::before {
+    
+    
+    margin: 12% 0 0 40%;
+
+}
+
+.venues h1::after {
+   
+    margin: 12% 41% 0 0;
+   
+} 
+        }
+@media only screen and (max-width:437px) {
+          
+             .tournaments {
+        
+    float: none;
+   
+  
+    }
+    .video {
+        
+    float: none;
+        margin-top: 20px;
+   
+    }
+    .tournaments h1::after {
+       margin: 3% 15% 0 10%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 10%;
+
+}
+    .tournaments h1{
+        font-size:1.2em; 
+    }
+  
+      
+    .video h1{
+        font-size:1.2em; 
+    }
+    .footer{
+        height:70vh; 
+    }
+    .middle{
+  
+  top: 90%;
+  
+}
+    .border{
+       margin-top: 50px; 
+    }
+    .gotopbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    background:orange ;
+    text-decoration: none;
+    text-align: center;
+    width:30px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+ 
+}
+        }
+@media (min-width: 422px) and (max-width: 540px){
+    .tournaments h1::after {
+      display: none;
+}
+    .video h1::after {
+      display: none;
+    }
+
+}
+@media only screen and (max-width:424px) {
+          
+     .tournaments h1::after {
+       margin: 3% 15% 0 25%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 25%;
+
+    }
+
+        }
+        @media only screen and (max-width:416px) {
+            
+            .left{
+              font-size:0.9em;  
+            }
+            .text1 {
+               margin-top: 10%; 
+            }
+
+            .text2 {
+             
+                margin-bottom: 8%;
+            }
+        }
+    
+    @media only screen and (max-width:406px) {
+            
+            .left{
+              font-size:0.8em;  
+            }
+        .right{
+              font-size:0.8em;  
+            }
+        .logo{
+            font-size: 1em;
+        }
+        .venues h1::before {
+    
+    
+    margin: 15% 0 0 40%;
+
+}
+
+.venues h1::after {
+   
+    margin: 15% 41% 0 0;
+   
+} 
+        .spn h1{
+            line-height: 40px;
+        }           
+  .spn h1::before {
+    
+    
+    margin: 10% 0 0 40%;
+
+}
+
+.spn h1::after {
+   
+    margin: 10% 41% 0 0;
+   
+}       
+         .stats h1::before {
+    
+    
+    margin: 8% 0 0 40%;
+
+}
+        .sponserd{
+            margin-top: 20px;
+        }
+.stats h1::after {
+   
+    margin: 8% 41% 0 0;
+   
+}         
+        
+          .cwc h1::before {
+    
+    
+    margin: 8% 0 0 40%;
+
+}
+
+.cwc h1::after {
+   
+    margin: 8% 41% 0 0;
+   
+}  .powerd ul li{
+    float: left;
+    width: calc(33.33% - 50px);
+    margin: 30px 0 0 40px;
+    
+}
+    .sponserd ul li{
+    float: left;
+    width: calc(33.33% - 30px);
+    margin-left: 30px;
+    
+}
+    .support ul li{
+    float: left;
+    width: calc(33.33% - 40px);
+    margin: 30px 0 0 40px;
+}
+        
+        
+        }
+    @media only screen and (max-width:380px) {
+          
+     .tournaments h1::after {
+       margin: 3% 15% 0 40%;
+
+}
+    .video h1::after {
+       margin: 3% 15% 0 40%;
+
+  
+
+        }
+        .spn h1{
+            font-size:1.5em; 
+        }
+        .venues h1{
+            font-size:1.5em; 
+        }
+        .spn h1{
+            font-size:1.5em; 
+        }
+        .cwc h1{
+            font-size:1.5em; 
+        }
+        .stats h1{
+            font-size:1.5em; 
+        }
+}
+@media only screen and (max-width:320px){
+      .left h5 {
+    
+    font-size: 0.9em;
+    
+}  
+    .logo{
+        font-size: 0.9em;
+           }
+
+}

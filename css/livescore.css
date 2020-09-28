@@ -1,0 +1,151 @@
+.center {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.live{
+    width: 100%;
+    text-align: center;
+   
+}  
+.live img{
+    width: 100px;
+    height: 50px;
+    margin: 10% 0 0 0;
+   
+}
+.left-side{
+    float: left;
+    width: 50%;
+    margin-bottom: 5%;
+}
+.left-side h1{
+    margin: 5px 0 5px 0;
+}
+.right-side{
+    float: left;
+    width: 50%;
+    margin-bottom: 5%;
+   
+}
+.right-side h1{
+    margin: 5px 0 5px 0;
+}
+#ppp{
+    margin: 0 0 10px 0;
+}
+#strick{
+    color: chartreuse;
+    margin-right: 5px;
+}
+.mdl{
+    width: 70%;
+     height: 350px;
+    background: #FCFBFE;
+    margin: 10% 0 0 15%;
+    border-radius: 30px;
+     box-shadow:  10px 10px  10px 1px #aaaaaa  ;
+}
+.mdl h2{
+   padding: 20px 0 0 0; 
+    font-size:1.5em;
+    color:green;
+}
+.mdl h2 span{
+   
+    color:red;
+}
+       
+.lf{
+    float: left;
+    width: 48%;
+    margin:1% 0 0 2%;
+    text-align: left;
+}
+.rh{
+    float: left;
+    width: 48%;
+     margin:1% 2% 0 0;
+    text-align: right;
+}
+.lf h1{
+    margin-top: 10px;
+    line-height: 20px;
+}
+.rh h1{
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+@media only screen and (max-width:1020px){
+    .lf h1{
+    margin-top: 15px;
+    
+}
+.rh h1{
+    margin-top: 15px;
+    
+}
+}
+@media only screen and (max-width:840px){
+    .lf h1{
+    margin-top: 25px;
+    
+}
+.rh h1{
+    margin-top: 25px;
+    
+}
+    #ppp{
+         margin: 0 0 20px 0; 
+    }
+}
+
+@media only screen and (max-width:680px){
+    .lf h1{
+    margin-top: 35px;
+    
+}
+.rh h1{
+    margin-top: 35px;
+    
+}
+    #ppp{
+        
+         margin: 0px 0 20px 0; 
+    }
+    
+}
+@media only screen and (max-width:515px){
+    .lf h1{
+    
+        font-size: 0.9em;
+    
+}
+.rh h1{
+    
+    font-size: 0.9em;
+}
+   
+    
+}
+@media only screen and (max-width:468px){
+    .lf h1{
+    
+        font-size: 0.8em;
+    
+}
+.rh h1{
+    
+    font-size: 0.8em;
+}
+   
+    
+}
